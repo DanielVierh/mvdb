@@ -1,0 +1,167 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \**************************************************************************************************************/
+.grid {
+  display: grid;
+  grid-template-columns: repeat 12, 1fr;
+  gap: 30px;
+  max-width: 1400px;
+}
+
+.center {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  scroll-behavior: smooth;
+  background-color: rgba(0, 0, 0, 0.874);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.sideScrollSection {
+  margin-top: 70px;
+}
+.sideScrollSection h2 {
+  text-align: left;
+  margin: 20px 100px;
+}
+
+.wrapper {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: start;
+  overflow-x: scroll;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.movieCard {
+  min-width: 250px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.movieCard .cardPoster {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 230px;
+  height: 290px;
+  z-index: 9;
+  box-shadow: 0 0 10px white;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.movieCard p {
+  z-index: 10;
+  padding: 0 10px;
+  font-size: 1.3em;
+  letter-spacing: 1.5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  text-align: center;
+  height: 90px;
+}
+.movieCard .cardVoteLabel {
+  position: absolute;
+  top: 0px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20% 0 20% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  z-index: 11;
+  box-shadow: 0 0 20px white;
+  border: 1px solid white;
+}
+
+.movieDescriptionContainer {
+  display: none;
+}
+.movieDescriptionContainer.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow-y: scroll;
+}
+.movieDescriptionContainer h2 {
+  margin-top: 50px;
+  width: 80%;
+  text-align: center;
+}
+.movieDescriptionContainer img {
+  width: 300px;
+  height: auto;
+  border-radius: 16px;
+}
+.movieDescriptionContainer p {
+  margin: 50px auto;
+  width: 80%;
+  max-width: 600px;
+}
+.movieDescriptionContainer .xbutton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 70px;
+  height: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px white;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.movieDescriptionContainer .miniWrapper {
+  display: flex;
+  margin: 30px auto;
+  flex-wrap: wrap;
+}
+.movieDescriptionContainer .miniWrapper .miniInfo {
+  background-color: black;
+  padding: 8px;
+  box-shadow: inset 0 0 10px white;
+  margin: 10px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

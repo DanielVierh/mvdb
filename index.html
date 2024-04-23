@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/main.css">
+    <title>Movie DB</title>
+</head>
+<body>
+    <h1>Film Datenbank</h1>
+
+    <section class="sideScrollSection">
+        <h2>Top 20 Filme aktuell</h2>
+        <div class="wrapper" id="top20Wrapper"></div>
+    </section>
+
+    <section class="sideScrollSection">
+        <h2>Demnächst</h2>
+        <div class="wrapper" id="soonWrapper"></div>
+    </section>
+
+    <section class="sideScrollSection">
+        <h2>Top Serien</h2>
+        <div class="wrapper" id="topSeries"></div>
+    </section>
+
+    <div class="movieDescriptionContainer" id="descrContainer">
+        <div class="xbutton" id="btn_close_descrCont">zurück</div>
+
+        <h2 id="descr_title">-</h2>
+        <div class="miniWrapper">
+            <div id="rating" class="miniInfo"></div>
+            <div id="votes" class="miniInfo"></div>
+            <div id="release" class="miniInfo"></div>
+            <div id="lng" class="miniInfo"></div>
+            <div id="desc_genre" class="miniInfo"></div>
+        </div>
+        <img src="" alt="" id="descr_Img">
+        <p id="descr_descr">Keine Beschreibung vorhanden</p>
+    </div>
+
+
+    <script src="public/javascript/main.js"></script>
+</body>
+</html>
