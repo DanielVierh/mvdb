@@ -32,7 +32,8 @@ h1 {
 }
 .sideScrollSection h2 {
   text-align: left;
-  margin: 20px 100px;
+  width: 100%;
+  padding-left: 30px;
 }
 
 .wrapper {
@@ -43,6 +44,7 @@ h1 {
   overflow-x: scroll;
   border: 1px solid white;
   border-radius: 10px;
+  padding: 10% 5%;
 }
 
 .movieCard {
@@ -61,8 +63,8 @@ h1 {
   top: 0;
   left: 50%;
   transform: translatex(-50%);
-  width: 230px;
-  height: 290px;
+  width: 210px;
+  height: 310px;
   z-index: 9;
   box-shadow: 0 0 10px white;
   border-radius: 8px;
@@ -71,19 +73,26 @@ h1 {
 .movieCard p {
   z-index: 10;
   padding: 0 10px;
-  font-size: 1.3em;
+  font-size: 1.5em;
   letter-spacing: 1.5px;
   position: absolute;
-  left: 0;
+  left: 20px;
   right: 0;
-  bottom: -15px;
+  bottom: -30px;
   text-align: center;
   height: 90px;
+  width: 190px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
+  text-shadow: 0 0 20px white;
+  text-transform: uppercase;
+  color: white;
+  hyphens: auto;
+  padding-top: 10px;
 }
 .movieCard .cardVoteLabel {
   position: absolute;
   top: 0px;
-  right: 8px;
+  right: 20px;
   width: 30px;
   height: 30px;
   border-radius: 20% 0 20% 50%;
@@ -112,13 +121,15 @@ h1 {
   backdrop-filter: blur(15px);
   z-index: 11;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .movieDescriptionContainer h2 {
-  margin-top: 50px;
+  margin-top: 90px;
   width: 80%;
   text-align: center;
 }
@@ -129,13 +140,17 @@ h1 {
 }
 .movieDescriptionContainer p {
   margin: 50px auto;
-  width: 80%;
+  width: 70%;
   max-width: 600px;
 }
+.movieDescriptionContainer #descr_descr {
+  width: 70%;
+  hyphens: auto;
+}
 .movieDescriptionContainer .xbutton {
-  position: fixed;
-  top: 10px;
-  left: 10px;
+  position: sticky;
+  top: 65px;
+  left: 30px;
   width: 70px;
   height: 20px;
   background-color: black;
@@ -148,11 +163,14 @@ h1 {
   padding: 5px;
   font-size: 1.3em;
   cursor: pointer;
+  align-self: flex-start;
+  color: lightblue;
 }
 .movieDescriptionContainer .miniWrapper {
   display: flex;
   margin: 30px auto;
   flex-wrap: wrap;
+  width: 90%;
 }
 .movieDescriptionContainer .miniWrapper .miniInfo {
   background-color: black;
